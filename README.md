@@ -88,9 +88,21 @@ else:
 
 * Now provide your api key in config.py file 
 
-## Now you are ready to use 
-
+## Now it will be ready to use
 ## Usage :
+
+```
+  ___    __                     __
+  / _ \  / /  ___  __ _____  ___/ /
+ / // / / _ \/ _ \/ // / _ \/ _  / 
+/____/ /_//_/\___/\_,_/_//_/\_,_/  
+
+[+]By Vishwaraj 
+
+Usage: dhound.py -t,--target <package_name>
+Usage: dhound.py -s,--sniff  <package_name>
+
+```
 
 Short Form    | Long Form     | Description
 ------------- | ------------- |-------------
