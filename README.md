@@ -80,8 +80,9 @@ else:
 	drozer_path="drozer"
 	save_path=pwd+"/"+pname
 ```
-## For Push Notifications or version change alerts
-* First install simplepush from playstore and obtain your api key
+## To get Push Notifications or version change alerts
+* First install simplepush (I am not associated and nither i work with simplepush!) from playstore and obtain your api key https://play.google.com/store/apps/details?id=io.tymm.simplepush&hl=en
+
 * Now provide your api key in config.py file 
 
 ## Now you are ready to use 
