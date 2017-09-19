@@ -1,11 +1,12 @@
 ## About D-hound 
 
-* Dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) for any change in app version as soon as the newer version is released or change is detected it will notify the user and starts scanning the app .
+* D-hound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) for any change in app version as soon as the newer version is released or change is detected it will notify the user and starts scanning the app .
 
 * Useful for security engineering teams to integrate it in cycle to regularly scan there apk builds for vulnerability checks.
 
 ## Demo :
-coming
+
+https://youtu.be/llcc-uuh7Gg
 
 ## Dependencies :
 
@@ -25,18 +26,23 @@ sudo pip install -r requirements.txt
 * **Drozer** : it uses drozer as a scanning engine you will need to download it from here https://labs.mwrinfosecurity.com/tools/drozer/
 
 ## How to setup guide ? 
+
 #### Install python 
 * 2.7.x is suggested and make sure python_path is in environment variables
 
 #### Install ADB 
+
 * For windows setup adb from here  https://developer.android.com/studio/releases/platform-tools.html by downloading the platform tools package
 
 #### Install drozer
+
 * **For Windows** : https://labs.mwrinfosecurity.com/tools/drozer/
 * **For Mac** : https://github.com/mwrlabs/drozer/releases/download/2.3.4/drozer-2.3.4.tar.gz or you can use quick script to install it https://github.com/vishwaraj/drozer_install
 
 #### Install Android Emulator
-* Preferred Genymotion with android 4.4.4,5.0,6.0 Leapdroid 
+
+* Suggested Genymotion with android 4.4.4,5.0,6.0, or Leapdroid (only if in case wanted to run emulator inside another vm)
+
 * Install **drozer_agent.apk** in the emulator and keep it running in the background. 
 
 #### Drozer agent
@@ -92,7 +98,9 @@ else:
 ## Usage :
 
 ```
-  ___    __                     __
+$ python dhound.py
+ 
+   ___    __                     __
   / _ \  / /  ___  __ _____  ___/ /
  / // / / _ \/ _ \/ // / _ \/ _  / 
 /____/ /_//_/\___/\_,_/_//_/\_,_/  
@@ -101,6 +109,7 @@ else:
 
 Usage: dhound.py -t,--target <package_name>
 Usage: dhound.py -s,--sniff  <package_name>
+vraj:documents vishwaraj$ 
 
 ```
 
