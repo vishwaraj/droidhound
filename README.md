@@ -1,8 +1,8 @@
 ## About D-hound 
 
-* Dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) the change in apk version as soon as the version change is detected it will send a push notification to the user and starts scanning.
+* Dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) for any change in app version as soon as the newer version is released or change is detected it will notify the user and starts scanning the app .
 
-* Product security teams can also integrate or modify it accordingly to regularly scan there apk builds for vulnerability checks.
+* Useful for security engineering teams to integrate it in cycle to regularly scan there apk builds for vulnerability checks.
 
 ## Demo :
 coming
@@ -38,6 +38,9 @@ sudo pip install -r requirements.txt
 #### Install Android Emulator
 * Preferred Genymotion with android 4.4.4,5.0,6.0 Leapdroid 
 * Install **drozer_agent.apk** in the emulator and keep it running in the background. 
+
+#### Drozer agent
+* Also put drozer agent as **dz.apk** in droidhound folder as the tool will install it back if in case drozer agent get's unistalled from device or emulator .
 
 #### Finally clone it
 ```
@@ -96,19 +99,19 @@ Short Form    | Long Form     | Description
 
 #### if you already have any apk in your emulator and directly want's to scan then
 * Start the drozer agent in emulator
-* Then hit ``` python testd.py <package_name>```
+* Then hit ``` python testd.py <package_name_from_playstore>```
 * you will find the results in package folder
 
 ### Examples :
 
 * To download and start scanning
 
-```python dhound.py -t <package_name>```
-```python dhound.py -t <com.deveoper.xyz>```
+```python dhound.py -t <package_name_playstore>```
+```python dhound.py -t com.deveoper.xyz```
 
 * To check and notify about version change
 
-``python dhound.py -s <package_name>``
+``python dhound.py -s <package_name_from_playstore>``
 
 ## License :
 
