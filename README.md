@@ -1,6 +1,6 @@
 ## About D-hound 
 
-* dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) the change in apk version as soon as the version change is detected it will send a push notification to the user and starts scanning.
+* Dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) the change in apk version as soon as the version change is detected it will send a push notification to the user and starts scanning.
 
 * Product security teams can also integrate or modify it accordingly to regularly scan there apk builds for vulnerability checks.
 
