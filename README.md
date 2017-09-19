@@ -36,7 +36,7 @@ sudo pip install -r requirements.txt
 * **For Mac** : https://github.com/mwrlabs/drozer/releases/download/2.3.4/drozer-2.3.4.tar.gz or you can use quick script to install it https://github.com/vishwaraj/drozer_install
 
 #### Install Android Emulator
-* Preffered Genymotion , Leapdroid 
+* Preferred Genymotion with android 4.4.4,5.0,6.0 Leapdroid 
 * Install **drozer_agent.apk** in the emulator and keep it running in the background. 
 
 #### Finally clone it
@@ -46,6 +46,7 @@ git clone https://github.com/vishwaraj/droidhound.git
 ```
 cd droidhound
 ```
+
 ## Note : 
 * **You have to update adb_path (where adb is located in windows ? ) in below code which can be found in dhound.py file**
 * **Similarly update drozer_path and adb_path in the below code as per your system which can be found in testd.py file**
@@ -67,7 +68,7 @@ else:
 
 ```
 #In testd.py file Please update adb_path and drozer_path as located in your system
-
+#Code for os check
 if platform=='win32':
     
 	adb_path="C:\\pentdroid\\bin\\platform-tools\\adb.exe"
@@ -79,6 +80,11 @@ else:
 	drozer_path="drozer"
 	save_path=pwd+"/"+pname
 ```
+## For Push Notifications or version change alerts
+* First install simplepush from playstore and obtain your api key
+* Now provide your api key in config.py file 
+
+## Now you are ready to use 
 
 ## Usage :
 
