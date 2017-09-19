@@ -50,7 +50,8 @@ cd droidhound
 * **You have to update adb_path (where adb is located in windows ? ) in below code which can be found in dhound.py file**
 * **Similarly update drozer_path and adb_path in the below code as per your system which can be found in testd.py file**
 
-```# dhound.py file here please update adb_path as per your system adb location
+```
+# dhound.py file here please update adb_path as per your system adb location
 # Code for os check
 if platform=='win32':
 
@@ -64,7 +65,8 @@ else:
     directory=pwd+"/"+package
 ```
 
-```#In testd.py file Please update adb_path and drozer_path as located in your system
+```
+#In testd.py file Please update adb_path and drozer_path as located in your system
 
 if platform=='win32':
     
