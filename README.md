@@ -1,8 +1,8 @@
 ## About D-hound 
 
-* dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing the change in apk version as soon as the version change is detected it will send a push notification and starts scanning.
+* dhound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps sniffing (working as a cron job) the change in apk version as soon as the version change is detected it will send a push notification to the user and starts scanning.
 
-* Product teams can also use or modify it accordingly to regularly scan there apk builds for vulnerability checks.
+* Product security teams can also integrate or modify it accordingly to regularly scan there apk builds for vulnerability checks.
 
 ## Demo :
 coming
@@ -47,10 +47,10 @@ git clone https://github.com/vishwaraj/droidhound.git
 cd droidhound
 ```
 ## Note : 
-* **you have to edit adb_path for windows in below code which can be found in dhound.py file**
-* **Similarly edit drozer_path and adb_path in the below code as per your system location which can be found in under testd.py file**
+* **You have to update adb_path (where adb is located in windows ? ) in below code which can be found in dhound.py file**
+* **Similarly update drozer_path and adb_path in the below code as per your system which can be found in testd.py file**
 
-```
+```# dhound.py file here please update adb_path as per your system adb location
 # Code for os check
 if platform=='win32':
 
@@ -64,6 +64,19 @@ else:
     directory=pwd+"/"+package
 ```
 
+```#In testd.py file Please update adb_path and drozer_path as located in your system
+
+if platform=='win32':
+    
+	adb_path="C:\\pentdroid\\bin\\platform-tools\\adb.exe"
+	drozer_path="C:\\drozer\\drozer.bat"
+	save_path=pwd+"\\"+pname
+
+else:
+	adb_path="adb"
+	drozer_path="drozer"
+	save_path=pwd+"/"+pname
+```
 
 ## Usage :
 
