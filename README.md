@@ -1,6 +1,6 @@
 ## About D-hound 
 
-* D-hound is a python tool designed to help penetration testers and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps on sniffing the app version as soon as the newer version is released or change is detected it will notify the user and starts scanning the app .
+* D-hound is a python tool designed to help pentesters and bug hunters to perform quick dynamic scans on android apps right from terminal. It also keeps on sniffing the app version as soon as the newer version is released or change is detected it will notify the user and starts scanning the app .
 
 * Useful for security engineering teams to integrate it in cycle to regularly scan there apk builds for vulnerability checks.
 
