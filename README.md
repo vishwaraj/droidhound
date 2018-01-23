@@ -4,7 +4,7 @@
 
 * Useful for security engineering teams to integrate it in cycle to regularly scan there apk builds for vulnerability checks.
 
-## Demo :
+## Video Demo :
 
 https://youtu.be/llcc-uuh7Gg
 
